@@ -1,0 +1,92 @@
+<div class="container">
+
+    <div class="row g-2 align-items-end">
+
+        <!-- Filter 1 -->
+        <div class="col-6 col-md-2  hidefilterBtns">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Filter 1</mat-label>
+                <mat-select>
+                    @for (food of foods; track food) {
+                        <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <!-- Filter 2 -->
+        <div class="col-6 col-md-2  hidefilterBtns">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Filter 2</mat-label>
+                <mat-select>
+                    @for (food of foods; track food) {
+                        <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <!-- Filter 3 -->
+        <div class="col-6 col-md-2  hidefilterBtns">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Filter 3</mat-label>
+                <mat-select>
+                    @for (food of foods; track food) {
+                        <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <!-- Filter 4 -->
+        <div class="col-6 col-md-2  hidefilterBtns">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Filter 4</mat-label>
+                <mat-select>
+                    @for (food of foods; track food) {
+                        <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <!-- Filter 2 -->
+        <!-- <div class="col-6 col-md-2  hidefilterBtns">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Filter 2</mat-label>
+                <mat-select>
+                    @for (food of foods; track food) {
+                        <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+        </div> -->
+
+        <!-- Advanced Filter Button -->
+        <div class="col-6 col-md-2 text-center showfilterBtns">
+            <button mat-raised-button color="primary" id="filterBTN" data-bs-toggle="modal" data-bs-target="#advancedFilterModal" class="w-100">
+                Advanced Filter
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="advancedFilterModal" tabindex="-1" aria-labelledby="advancedFilterModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg"> <!-- Large Modal -->
+        <div class="modal-content custom-modal-size"> <!-- Custom class for height -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="advancedFilterModalLabel">Advanced Filters</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Here you can add more advanced filter options.</p>
+            </div>
+            <div class="modal-footer">
+                <button mat-stroked-button color="warn" data-bs-dismiss="modal">Close</button>
+                <button mat-raised-button color="primary">Apply Filters</button>
+            </div>
+        </div>
+    </div>
+</div>
+

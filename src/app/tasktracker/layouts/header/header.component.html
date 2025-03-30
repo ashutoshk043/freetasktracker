@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <!-- Left: Logo & Navigation -->
+        <div class="d-flex align-items-center">
+            <svg width="150" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="14" width="20" height="20" rx="3" stroke="#28A745" stroke-width="3"/>
+                <path d="M14 22L19 28L26 18" stroke="#28A745" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="40" y="30" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#FFFFFF">
+                    Free Task Tracker
+                </text>
+            </svg>
+        </div>
+
+        <!-- Center: Ad Banner -->
+        <div class="ad-banner d-none d-md-block">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJP2eH2ItPUx8K8QlXEPajZpZjoMGh8hmJSw&s" 
+                 alt="Ad Banner" class="img-fluid" />
+        </div>
+
+        <!-- Right: Notification & User Dropdown -->
+        <div class="d-flex align-items-center">
+            <!-- Notification -->
+            <a class="nav-link position-relative me-3" href="#">
+                <i class="bi bi-bell fs-4"></i>
+                <span class="badge bg-danger rounded-circle position-absolute notification-badge">3</span>
+            </a>
+
+            <!-- Sidebar Dropdown -->
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                    User
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end drop-up" aria-labelledby="userDropdown">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+
+            <!-- User Dropdown -->
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                    User
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end drop-up" aria-labelledby="userDropdown">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

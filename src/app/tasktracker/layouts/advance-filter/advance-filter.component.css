@@ -1,0 +1,18 @@
+/* Responsive: Hide filters and make Advanced Filter full-width */
+@media (max-width: 768px) {
+    .showfilterBtns {
+        display: none;
+    }
+}
+
+/* General button style */
+#filterBTN {
+    margin-bottom: 23px;
+    padding: 10px;
+}
+
+.custom-modal-size {
+    max-width: 90%; /* Make it take 90% of the screen width */
+    height: 80vh; /* Set height to 80% of the viewport */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
