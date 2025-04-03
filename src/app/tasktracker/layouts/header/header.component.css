@@ -60,3 +60,33 @@
         display: none;
     }
 }
+
+
+/* Styles for the profile container */
+app-user-profile {
+    display: block; /* Ensure it's displayed when the *ngIf condition is true */
+    position: fixed; /* Position it relative to the viewport */
+    top: 50%; /* Vertically center it */
+    left: 50%; /* Horizontally center it */
+    transform: translate(-50%, -50%); /* Correct the offset for exact centering */
+    z-index: 1050; /* Ensure it's above the other content */
+    background-color: #fff; /* Optional: Background color for the profile */
+    padding: 20px; /* Optional: Padding around the profile */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow to make it stand out */
+    border-radius: 8px; /* Optional: Rounded corners */
+    max-width: 90%; /* Optional: Max width to ensure it doesn't take full screen on smaller devices */
+    max-height: 90%; /* Optional: Max height to make it responsive */
+    overflow-y: auto; /* Optional: Scroll if content overflows */
+  }
+  
+  /* Optional: For backdrop when the profile is open */
+  .app-user-profile-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    z-index: 1040; /* Below the profile */
+  }
+  
